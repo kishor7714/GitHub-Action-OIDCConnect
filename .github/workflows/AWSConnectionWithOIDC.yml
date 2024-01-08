@@ -26,5 +26,6 @@ jobs:
       - name: Print AWS SSM Parameter
         run: aws ssm get-parameter --name=hello_aws-gh-oidc --query Parameter.Value
 
+        # get caller identity
       - name: Print assumed role
         run: aws sts get-caller-identity
